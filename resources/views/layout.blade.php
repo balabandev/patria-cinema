@@ -33,11 +33,6 @@
         <nav class="w-64 bg-black border-r border-gray-800 py-8 px-6 flex flex-col">
             <ul class="space-y-6 font-medium">
                 <li>
-                    <a href="{{ route('movies') }}" class="block text-gray-300 hover:text-white transition-colors duration-200 {{ request()->routeIs('movies') ? 'text-white font-semibold' : '' }}">
-                        Movies
-                    </a>
-                </li>
-                <li>
                     <a href="{{ route('schedule') }}" class="block text-gray-300 hover:text-white transition-colors duration-200 {{ request()->routeIs('schedule') ? 'text-white font-semibold' : '' }}">
                         Schedule
                     </a>

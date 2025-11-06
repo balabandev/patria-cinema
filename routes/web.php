@@ -1,31 +1,19 @@
 <?php
 
+use App\Http\Controllers\ScheduleController;
+use App\Http\Controllers\GeneralController;
 use Illuminate\Support\Facades\Route;
 
-Route::get("/", function () {
-    return view("home");
-})->name("home");
+Route::get("/", [GeneralController::class, "home"])->name("home");
 
-Route::get("/movies", function () {
-    return view("movies");
-})->name("movies");
+Route::get("/movies", [GeneralController::class, "movies"])->name("movies");
 
-Route::get("/schedule", function () {
-    return view("schedule");
-})->name("schedule");
+Route::get('/schedule', [ScheduleController::class, 'schedule'])->name('schedule');
 
-Route::get("/news", function () {
-    return view("news");
-})->name("news");
+Route::get("/news", [GeneralController::class, "news"])->name("news");
 
-Route::get("/about", function () {
-    return view("about");
-})->name("about");
+Route::get("/about", [GeneralController::class, "about"])->name("about");
 
-Route::get("/contacts", function () {
-    return view("contacts");
-})->name("contacts");
+Route::get("/contacts", [GeneralController::class, "contacts"])->name("contacts");
 
-Route::get("/rules", function () {
-    return view("rules");
-})->name("rules");
+Route::get("/rules", [GeneralController::class, "rules"])->name("rules");
