@@ -18,7 +18,8 @@ class Movie extends Model
         'sound',
         'actors',
         'director',
-        'synopsis'
+        'synopsis',
+        'image'
     ];
 
     public function showtime()

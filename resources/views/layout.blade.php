@@ -25,6 +25,24 @@
                     «PATRIA» — with us, it's like being in a movie!
                 </h2> -->
 
+                <div class="flex space-x-5">
+                <a href="">
+                    <x-bxl-facebook class="text-gray-200 w-7 h-7 hover:text-white transition" />
+                </a>
+                <a href="">
+                    <x-bxl-telegram class="text-gray-200 w-7 h-7 hover:text-white transition" />
+                </a>
+                <a href="">
+                    <x-bxl-instagram class="text-gray-200 w-7 h-7 hover:text-white transition" />
+                </a>
+                <a href="">
+                    <x-bxl-youtube class="text-gray-200 w-7 h-7 hover:text-white transition" />
+                </a>
+                <a href="">
+                    <x-bxl-tiktok class="text-gray-200 w-7 h-7 hover:text-white transition" />
+                </a>
+            </div>
+
             </div>
         </div>
     </header>
@@ -59,21 +77,26 @@
                 </li>
             </ul>
         </nav>
+        
         <main class="flex-1 py-8 px-6 font-medium">
             @yield("main")
         </main>
     </div>
 
     <footer class="bg-black border-t border-gray-800 py-6">
-            <div class="container mx-auto px-6">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <div class="text-gray-400 text-sm mb-4 md:mb-0">
-                        &copy;2024-2025 «Cinematograful PATRIA»
-                    </div>
-                </div>
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-gray-400 text-sm">
+                &copy;2024-2025 «Cinematograful PATRIA»
             </div>
-    </footer>
 
+            <div class="flex space-x-4 order-first md:order-none">
+                <x-bxl-mastercard class="text-gray-200 w-10 h-10" />
+                <x-bxl-visa class="text-gray-200 w-10 h-10" />
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 </body>
