@@ -24,6 +24,11 @@ class GeneralController extends Controller
         return view ("news");
     }
 
+    public function rules()
+    {
+        return view ("rules");
+    }
+
     public function about()
     {
         return view ("about");
