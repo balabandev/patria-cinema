@@ -2,7 +2,7 @@
 
 @section('main')
     <section class="p-6">
-        <h1 class="text-3xl font-bold mb-6 text-white">News</h1>
+        <h1 class="text-3xl font-bold mb-6">News</h1>
 
         <div class="space-y-6">
             @foreach($news as $item)
