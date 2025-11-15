@@ -67,7 +67,7 @@
                 </li>
                 <li>
                     <a href="{{ route('about') }}" class="block text-gray-300 hover:text-white transition-colors duration-200 {{ request()->routeIs('about') ? 'text-white font-semibold' : '' }}">
-                        About
+                        About us
                     </a>
                 </li>
                 <li>

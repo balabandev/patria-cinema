@@ -8,10 +8,10 @@
             @foreach($news as $item)
                 <div class="bg-gray-800 text-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <div class="p-6 pb-4">
-                        <h2 class="text-xl font-bold mb-3 text-white">
+                        <h2 class="text-xl font-bold mb-3 text-red-500">
                             {{ $item->title }}
                         </h2>
-                        <p class="text-gray-300 leading-relaxed mb-4">
+                        <p class="text-white leading-relaxed mb-4">
                             {{ Str::limit($item->content, 300) }}
                         </p>
                     </div>

@@ -13,12 +13,7 @@
 
                     <div class="flex-shrink-0">
                         @if($movie->image)
-                            <img 
-                                src="{{ asset('storage/' . $movie->image) }}" 
-                                alt="{{ $movie->name }}"
-                                class="w-16 h-20 object-cover rounded"
-                                onerror="this.style.display='none'"
-                            >
+                            <img src="{{ asset('storage/movies/' . $movie->image) }}" alt="{{ $movie->name }}" class="w-16 h-20 object-cover rounded" onerror="this.style.display='none'">
                         @else
                             <div class="bg-gray-700 w-16 h-20 rounded flex items-center justify-center">
                                 <span class="text-xs text-gray-500">No image</span>

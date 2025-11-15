@@ -10,7 +10,7 @@ class ScheduleController extends Controller
     public function schedule()
     {
         $showtimes = Showtime::with('movie')
-            ->whereDate('date', '>=', today())
+            // ->whereDate('date', '>=', today())
             ->orderBy('date')
             ->orderBy('time')
             ->get()
