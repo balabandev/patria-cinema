@@ -6,7 +6,7 @@
     <title>Cinematograful Patria</title>
     <link rel="icon" href="{{ asset('storage/logo1.png') }}">
 
-    @vite('resources/css/app.css')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-black text-gray-100 font-medium">
 
