@@ -17,7 +17,7 @@
                 <p class="font-medium">Booking: 0 (22) 899955, 0 (68) 466956</p>
                 <p class="font-medium">Schedule: 0 (22) 899966</p>
                 <p class="font-medium">Administrator: 0 (22) 899980, 0 (68) 455525</p>
-                <p class="font-medium">Address: </p>
+                <p class="font-medium">Address: Studentilor, 7/5, MD-2069</p>
             </div>
         </div>
 
