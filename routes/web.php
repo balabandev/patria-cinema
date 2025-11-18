@@ -5,6 +5,8 @@ use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\GeneralController;
 use Illuminate\Support\Facades\Route;
 
+// Route::fallback(function () { return response()->view('errors.404', [], 404);});
+
 Route::get("/", [GeneralController::class, "home"])->name("home");
 
 Route::get("/movies", [GeneralController::class, "movies"])->name("movies");
