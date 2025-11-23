@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\GeneralController;
@@ -20,3 +21,13 @@ Route::get("/about", [GeneralController::class, "about"])->name("about");
 Route::get("/contacts", [GeneralController::class, "contacts"])->name("contacts");
 
 Route::get("/rules", [GeneralController::class, "rules"])->name("rules");
+
+Route::get("/login", [AuthController::class, "login"])->name('login');
+
+Route::get("/register", [AuthController::class, "register"])->name('register');
+
+Route::post("/register", [AuthController::class, "registerPost"])->name("register-post");
+
+Route::post("/login", [AuthController::class, "loginPost"])->name('login-post');
+
+Route::get("/logout", [AuthController::class, "logout"])->name('logout');
