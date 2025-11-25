@@ -60,19 +60,19 @@
             </ul>
 
             <div class="mt-6 flex space-x-3 md:space-x-5">
-                <a href="">
+                <a wire:navigate href="">
                     <x-bxl-facebook class="text-gray-200 w-6 h-6 md:w-7 md:h-7" />
                 </a>
-                <a href="">
+                <a wire:navigate href="">
                     <x-bxl-telegram class="text-gray-200 w-6 h-6 md:w-7 md:h-7" />
                 </a>
-                <a href="">
+                <a wire:navigate href="">
                     <x-bxl-instagram class="text-gray-200 w-6 h-6 md:w-7 md:h-7" />
                 </a>
-                <a href="">
+                <a wire:navigate href="">
                     <x-bxl-youtube class="text-gray-200 w-6 h-6 md:w-7 md:h-7" />
                 </a>
-                <a href="">
+                <a wire:navigate href="">
                     <x-bxl-tiktok class="text-gray-200 w-6 h-6 md:w-7 md:h-7" />
                 </a>
             </div>
