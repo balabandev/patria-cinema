@@ -5,7 +5,6 @@
         </button>
 
         <nav id="mobile-menu" class="fixed lg:static inset-0 z-40 bg-black/95 lg:bg-black lg:w-64 border-r border-gray-800 py-8 px-6 transform -translate-x-full lg:translate-x-0 transition-transform duration-300">
-            <button id="mobile-menu-close" class="lg:hidden absolute top-10 right-7 text-white text-3xl">&times;</button>
 
             <ul class="space-y-2 lg:space-y-6 font-medium mt-12 lg:mt-0">
                 @auth
@@ -60,7 +59,7 @@
                 </li>
             </ul>
 
-            <div class="mt-6 sm:flex space-x-3 md:space-x-5">
+            <div class="mt-6 flex space-x-3 md:space-x-5">
                 <a href="">
                     <x-bxl-facebook class="text-gray-200 w-6 h-6 md:w-7 md:h-7" />
                 </a>
@@ -86,15 +85,10 @@
 
     <script>
         const menuToggle = document.getElementById('mobile-menu-toggle');
-        const menuClose = document.getElementById('mobile-menu-close');
         const menu = document.getElementById('mobile-menu');
 
         menuToggle?.addEventListener('click', () => {
-            menu.classList.remove('-translate-x-full');
-        });
-
-        menuClose?.addEventListener('click', () => {
-            menu.classList.add('-translate-x-full');
+            menu.classList.toggle('-translate-x-full');
         });
 
         menu?.querySelectorAll('a').forEach(link => {
