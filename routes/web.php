@@ -31,3 +31,5 @@ Route::post("/register", [AuthController::class, "registerPost"])->name("registe
 Route::post("/login", [AuthController::class, "loginPost"])->name('login-post');
 
 Route::get("/logout", [AuthController::class, "logout"])->name('logout');
+
+Route::get("/account", [AuthController::class, "account"])->name('account');

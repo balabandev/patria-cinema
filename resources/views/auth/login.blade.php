@@ -20,7 +20,7 @@
             </div>
 
             <div class="pt-4 sm:pt-8">
-                <button type="submit" class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-red-600 font-bold uppercase rounded-md hover:bg-red-700 transition">Register</button>
+                <button type="submit" class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-red-600 font-bold uppercase rounded-md hover:bg-red-700 transition">Login</button>
             </div>
         </form>
     </section>

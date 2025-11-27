@@ -9,7 +9,7 @@
             <ul class="space-y-2 lg:space-y-6 font-medium mt-12 lg:mt-0">
                 @auth
                     <li>
-                        <a class="block px-4 lg:px-8 py-3 lg:py-4 text-gray-300" href="">
+                        <a class="block px-4 lg:px-8 py-3 lg:py-4 text-gray-300" href="{{ route('account') }}">
                             Account
                         </a>
                     </li>
