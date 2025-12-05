@@ -19,10 +19,6 @@
                             <span>My bookings</span>
                         </a>
                         
-                        <a href="#" class="flex items-center gap-3 px-4 py-3 bg-white border-2 rounded-lg font-medium text-red-700">
-                            <span>Password change</span>
-                        </a>
-                        
                         <a href="{{ route('logout') }}" class="flex items-center gap-3 px-4 py-3 bg-white border-2 rounded-lg font-medium text-red-700">
                             <span>Logout</span>
                         </a>
@@ -38,11 +34,11 @@
 
                         <form class="space-y-4">
                             <div>
-                                <input type="text" name="" placeholder="Name" class="w-full px-4 py-3 border border-gray-300 rounded-lg text-black"/>
+                                <input type="text" value="{{ auth()->user()->name }}" placeholder="Name" class="w-full px-4 py-3 border border-gray-300 rounded-lg text-black"/>
                             </div>
 
                             <div>
-                                <input type="email" value="" placeholder="Email" class="w-full px-4 py-3 border border-gray-300 rounded-lg text-black"/>
+                                <input type="email" value="{{ auth()->user()->email }}" placeholder="Email" class="w-full px-4 py-3 border border-gray-300 rounded-lg text-black"/>
                             </div>
 
                             <button type="submit" class="bg-red-700 font-medium px-8 py-3 rounded-lg">

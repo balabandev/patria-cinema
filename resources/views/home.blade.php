@@ -10,7 +10,7 @@
                     <div class="bg-gray-800 rounded-2xl sm:rounded-3xl" 
                          @click="openModal = true; selectedMovie = {{ json_encode($movie) }}">
                         <div class="aspect-[2/3] bg-gray-900 rounded-t-2xl sm:rounded-t-3xl overflow-hidden">
-                            <img src="{{ asset('storage/movies/' . $movie->image) }}" alt="{{ $movie->name }}" class="w-full h-full object-cover object-center">
+                            <img src="{{ asset('storage/movies/' . $movie->image) }}" loading="lazy" alt="{{ $movie->name }}" class="w-full h-full object-cover object-center">
                         </div>
                         <div class="p-3 sm:p-4 text-center">
                             <p class="font-semibold text-xs sm:text-sm md:text-base line-clamp-1" title="{{ $movie->name }}">
