@@ -7,6 +7,7 @@
         <nav id="mobile-menu" class="fixed lg:static inset-0 z-40 bg-black/95 lg:bg-black lg:w-64 border-r border-gray-800 py-8 px-6 transform -translate-x-full lg:translate-x-0 transition-transform duration-300">
 
             <ul class="space-y-2 lg:space-y-6 font-medium mt-12 lg:mt-0">
+
                 @auth
                     <li>
                         <a class="block px-4 lg:px-8 py-3 lg:py-4 text-gray-300" href="{{ route('account') }}">
@@ -19,17 +20,18 @@
                         </a>
                     </li>
                 @endauth
+
                 @guest
                     <li>
                         <a class="block px-4 lg:px-8 py-3 lg:py-4 text-gray-300" href="{{ route('login') }}">
-                            Login
+                            Login 
                         </a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a class="block px-4 lg:px-8 py-3 lg:py-4 text-gray-300" href="{{ route('register') }}">
                             Register
                         </a>
-                    </li>
+                    </li> -->
                 @endguest
                 
                 <li>
