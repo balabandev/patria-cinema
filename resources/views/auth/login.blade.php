@@ -27,7 +27,7 @@
 
             <div class="mt-6">
                 <p class="text-gray-300">
-                    No account? 
+                    Don't have an account? 
                     <a href="{{ route('register') }}" class="text-red-500 hover:text-red-400 font-semibold underline">Create one</a>
                 </p>
             </div>
